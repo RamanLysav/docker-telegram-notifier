@@ -10,7 +10,7 @@ Run a container as follows:
 
 ```sh
 # Docker
-docker run -d --env TELEGRAM_NOTIFIER_BOT_TOKEN=token --env TELEGRAM_NOTIFIER_CHAT_ID=chat_id --volume /var/run/docker.sock:/var/run/docker.sock:ro poma/docker-telegram-notifier
+docker run -d --name docker-telegram-notifier --env TELEGRAM_NOTIFIER_BOT_TOKEN=token --env TELEGRAM_NOTIFIER_CHAT_ID=chat_id --env ONLY_WHITELIST=true --volume /var/run/docker.sock:/var/run/docker.sock:ro poma/docker-telegram-notifier
 
 # Docker Compose
 curl -O https://raw.githubusercontent.com/poma/docker-telegram-notifier/master/docker-compose.yml
