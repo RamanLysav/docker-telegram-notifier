@@ -1,10 +1,12 @@
-# Docker Telegram Notifier [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/poma/docker-telegram-notifier.svg)](https://hub.docker.com/r/poma/docker-telegram-notifier/builds)
+# Docker Telegram Notifier
 
 A Telegram integration to notify Docker events. This service notifies about container `start`, `stop`, `restart` events, and changes of Docker healthcheck status. If you wish you can add more event notifications in `templates.js` file.
 
 ## How to Run
 
-[Set up a telegram bot](https://core.telegram.org/bots#3-how-do-i-create-a-bot) and get the `Bot Token`. then add the bot to a group and make it admin and [extract the Chat ID](https://stackoverflow.com/a/32572159/882223).
+1. [Set up a telegram bot](https://core.telegram.org/bots#3-how-do-i-create-a-bot) and get the `Bot Token`
+2. add the bot to a group and make it admin and [extract the Chat ID](https://stackoverflow.com/a/32572159/882223)
+3. Run using shell script below or build own image using Dockerfile
 
 Run a container as follows:
 
